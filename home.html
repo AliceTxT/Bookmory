@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <title>Booketh</title>
+
+    <!--SCRIPTS-->
+    <script src="date.js"></script>
+    <script src="settings.js"></script>
+    <script src="quote.js"></script>
+
+    <!--NAVIGATION-->
+    <header class=>
+        <div class="mainHeader">
+            <div id="headerTitle">
+                <h1>BOOKETH</h1>
+            </div>
+        </div>
+        <div class="navigation">
+            <a href="home.html"><button class="btnNavSelected">Home</button></a>
+            <a href="library.html"><button class="btnNav">Library</button></a>
+            <a href="statistics.html"><button class="btnNav">Statistics</button></a>
+            <a href="countdown.html"><button class="btnNav">Countdown</button></a>
+            <a href="settings.html"><button class="btnNav">Settings</button></a>
+        </div>
+    </header> 
+
+
+    <body>
+        <div class="content">
+            <div>
+                <div class="inline"><h2>Hello,</h2></div>
+                <div class="inline"><h2 id="helloUsername"></h2></div>
+                
+                <script>usernameDisplay()</script>
+            </div>
+
+            <h3 id="dateTxt"></h3>
+            <script>dateDisplay();</script>
+
+            <div id="quoContainer">
+                <img src="img/quote icon.png" id="quoIcon">
+                <div class="quoDisplay">
+                    <p id="quoDisplay"></p>
+                </div>
+                <div class="quoAuthor">
+                    <p id="quoAuthor"></p>
+                </div>
+            </div>
+            <script>generateQuote()</script>
+
+
+            <h3>Other pages</h3>
+            <a href="tarot.html"><button class="btnNav">Tarot reading</button></a>
+        </div>
+    </body>
+</html>

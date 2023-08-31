@@ -1,0 +1,412 @@
+::placeholder {
+    color: grey;
+    font-family: Rival;
+}
+
+
+/*HEADER*/
+.mainHeader{
+    background-color: #E3816F; 
+    margin-left:-8px;
+    margin-right:-8px;
+    margin-top:-10px;
+    border-bottom-right-radius:35px;
+    border-bottom-left-radius:35px;
+}
+#headerTitle{
+    padding:1px;
+    text-align: center;
+    font-size:16px;
+    font-family:Rival;
+    color:#3D2715;
+}
+
+/*BODY*/
+body{
+    background-color: #F6DFD3; 
+    font-family:Rival;
+    font-size:18px;
+}
+
+.title{
+    margin-left:10px;
+}
+
+
+/*NAVIGATION*/
+.navigation{
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom:10px;
+    width: 46%; 
+    padding: 10px;
+}
+.btnNav{
+    width:18%;
+    height:38px;
+    margin:5px;
+    border-radius:20px;
+    border: none;
+    background-color: #EDC86B;
+    color: #3D2715;
+    font-family: Rival;
+    font-weight: bold;
+    font-size:90%;
+    transition:0.25s;
+}
+.btnNavSelected{
+    width:18%;
+    height:38px;
+    margin:5px;
+    border-radius:20px;
+    border-width:0px;
+    background-color: #E3816F;
+    color: #3D2715;
+    font-family: Rival;
+    font-weight: bold;
+    font-size:90%;
+}
+.btnNav:hover{
+    background-color: #E3816F;
+    cursor: pointer;
+}
+
+
+
+.content{
+    margin-left:400px;
+    margin-right:400px;
+}
+
+#square{
+    background-color:#EDC86B;
+    width:150px;
+    height:150px;
+    border-radius:10px;
+}
+
+.inline{
+    display: inline-block;
+}
+
+
+
+
+/*CALCULATOR*/
+.field{
+    border-radius:10px;
+    border-width:0px;
+    background-color:#FFF8EB;
+    padding-left:25px;
+    font-weight:bold;
+}
+.calcInput{
+    margin-left:10px;
+    height: 20px;
+    font-family:Rival;
+    font-size:14px;
+    border-radius:10px;
+    padding-left:8px;
+    padding-right:8px;
+}
+.calcBtn{
+    font-family:Rival;
+    font-size:15px;
+    font-weight:bold;
+    width:100px;
+    height:40px;
+    border-width:0px;
+    border-radius:20px;
+    background-color:#EDC86B;
+    transition:0.25s;
+}
+.calcBtn:hover{
+    background-color:#E3816F;
+    cursor: pointer;
+}
+
+
+
+/*SETTINGS*/
+.setInput{
+    height: 20px;
+    width: 200px;
+    font-family:Rival;
+    font-size:14px;
+    border-radius:10px;
+    padding-left:8px;
+    padding-right:8px;
+}
+.setBtn{
+    font-family:Rival;
+    font-size:14px;
+    width:90px;
+    height:30px;
+    border-width:0px;
+    border-radius:20px;
+    margin-left: 20px;
+    background-color:#EDC86B;
+    transition:0.25s;
+}
+.setBtn:hover{
+    background-color:#E3816F;
+    cursor: pointer;
+}
+
+
+/*IMAGES*/
+.imgDarkAcademia{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 5px;
+}
+.column{
+    float: left;
+    width: 50%;
+    flex:24%;
+    padding: 0 5px;
+}
+.column img{
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 10px;
+    vertical-align: middle;
+}
+
+table, th, td{
+    width: 50%;
+    background-color:white;
+    border:1px solid;
+    border-collapse: collapse;
+    text-align: left;
+    padding:5px;
+    padding-left:10px;
+}
+
+
+
+
+
+#soonBlock{
+    padding:80px;
+    text-align: center;
+    color: #FFF8EB;
+    background-image: url(img_darkacademia/old\ castle\ view.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+    margin-bottom: 15px;
+}
+#soonTitle{
+    font-size: 40px;
+}
+#soonDivider{
+    border: 1px solid #FFF8EB;
+    width: 150px;
+}
+#soonInputBlock{
+    width: 40%;
+    margin: auto;
+    font-size: 15px;
+    font-weight: bold;
+}
+.soonInput{
+    font-family: Rival;
+    width: 84%;
+    height:25px;
+    border-width:0px;
+    border-radius: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.soonInput:focus {
+    font-family: Rival;
+}
+#soonBtn{
+    font-family:Rival;
+    transition: 0.25s;
+    cursor: pointer;
+    width: 10%;
+    background-color:#EDC86B;
+    border-width:0px;
+    height:28px;
+    border-radius: 5px;
+    margin-left: 3px
+}
+#soonBtn:hover {
+    background-color: #E3816F;
+}
+.soonHeader {
+    margin-bottom: -8px;
+}
+
+
+
+
+/*TODO LIST*/
+#todoContainer{
+    width:70%;
+    color:#3D2715;
+    margin:auto;
+    margin-top: 20px;
+    padding: 14px;
+    padding-left:12px;
+    margin-bottom: 100px;
+}
+.todoEnter{
+    font-family: Rival;
+    margin: auto;
+    width: 95%;
+    height: 25px;
+    margin-bottom: 10px;
+}
+#todoInput{
+    width:84.5%;
+    height:36px;
+    border: none;
+    border-radius:5px;
+    padding-left: 14px;
+    padding-right: 14px;
+    font-family: Rival;
+    font-size:17px;
+}
+#todoInput:focus{
+    font-family: Rival;
+}
+#todoInputBtn{
+    font-family: Rival;
+    width: 10%;
+    margin-left:1%;
+    height:39px;
+    border: none;
+    background-color:#EDC86B;
+    cursor: pointer;
+    transition: 0.25s;
+    border-radius:5px;
+}
+#todoInputBtn:hover{
+    background-color:#E3816F;
+}
+#todoTasklist{
+    width:95%;
+    margin: auto;
+    min-height:30px;
+}
+.todoTaskName{
+    font-family: Rival;
+    width:77.5%;
+    height:25px;
+    background-color: white;
+    float: left;
+    border-radius:5px;
+}
+.todoTaskBtn{
+    font-family: Rival;
+    width: 9.2%;
+    margin-left:1.2%;
+    height:39px;
+    border: none;
+    background-color:#EDC86B;
+    cursor: pointer;
+    transition: 0.25s;
+    border-radius:5px;
+    margin-bottom:8px;
+    transition: 0.25s;
+}
+.todoTaskBtn:hover{
+    background-color:#E3816F;
+}
+.todoCcheckbox {
+    display: inline;
+    margin-right: 8px;
+    height:20px;
+    width: 20px;
+    cursor: pointer;
+}
+.todoCtaskname{
+    bottom:3px;
+    position: relative;
+    display: inline;
+    margin-left: 5px;
+}
+.todoNewTask{
+    font-family: Rival;
+    width:83%;
+    height:32px;
+    background-color: white;
+    float: left;
+    margin-left: 2.5%;
+    border-radius:5px;
+    margin-bottom:8px;
+    padding-left:5px;
+    padding-top:5px;
+}
+#todoTest{
+    margin-top: 30px;
+}
+
+
+/*RANDOM QUOTE GENERATOR*/
+#quoContainer{
+    min-height: 100px;
+    width: 70%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding:3%;
+    font-size:20px;
+    border: #3D2715 solid 1px;
+    border-radius: 8px;
+}
+#quoIcon{
+    width:65px;
+    height:65px;
+    float:left;
+    margin:5px;
+}
+.quoDisplay{
+    min-height:30px;
+    margin-bottom: 1%;
+    width:87%;
+    margin-left:13%;
+    line-height: 1.4;
+}
+.quoAuthor{
+    min-height:30px;
+    width:100%;
+    text-align: right;
+}
+
+
+
+.tarotContainer{
+    margin: auto;
+    position: relative;
+    height: 500px;
+    padding: 5%;
+}
+.tarotCard {
+    width: 32%;
+    min-height: 430px;
+    float: left;
+    position: relative;
+    margin-right: 1%; 
+}
+.tarotCard img {
+    width: 280px;
+    margin: 20px;
+    cursor: pointer;
+    
+}
+.cardName {
+    position: relative;
+    height: auto;
+    width: 280px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+    font-family: Rival; 
+    font-weight: bold;
+    font-size: 22px;
+    color:#3D2715;
+}

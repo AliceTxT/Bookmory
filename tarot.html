@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <title>Booketh</title>
+
+    <!--SCRIPTS-->
+    <script src="tarot.js"></script>
+
+    <!--NAVIGATION-->
+    <header class=>
+        <div class="mainHeader">
+            <div id="headerTitle">
+                <h1>BOOKETH</h1>
+            </div>
+        </div>
+        <div class="navigation">
+            <a href="home.html"><button class="btnNav">Home</button></a>
+            <a href="library.html"><button class="btnNav">Library</button></a>
+            <a href="statistics.html"><button class="btnNav">Statistics</button></a>
+            <a href="countdown.html"><button class="btnNav">Countdown</button></a>
+            <a href="settings.html"><button class="btnNav">Settings</button></a>
+        </div>
+    </header> 
+
+
+    <body>
+        <div class="content">
+            <div class="tarotContainer">
+                <div class="tarotCard">
+                    <img id="cardImg1" src="img_tarot/back.png" onclick="tarotCard1()">
+                    <div class="cardName" id="cardName1"></div>
+                </div>
+                <div class="tarotCard">
+                    <img id="cardImg2" src="img_tarot/back.png" onclick="tarotCard2()">
+                    <div class="cardName" id="cardName2"></div>
+                </div>
+                <div class="tarotCard">
+                    <img id="cardImg3" src="img_tarot/back.png" onclick="tarotCard3()">
+                    <div class="cardName" id="cardName3"></div>
+                </div>
+            </div>
+            <div id="tarotTest">
+            </div>
+        </div>
+    </body>
+</html>

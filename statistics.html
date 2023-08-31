@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <title>Booketh</title>
+
+    <script src="square.js"></script>
+    <script src="calculator.js"></script>
+
+    <header class=>
+        <div class="mainHeader">
+            <div id="headerTitle">
+                <h1>BOOKETH</h1>
+            </div>
+        </div>
+        <div class="navigation">
+            <a href="home.html"><button class="btnNav">Home</button></a>
+            <a href="library.html"><button class="btnNav">Library</button></a>
+            <a href="statistics.html"><button class="btnNavSelected">Statistics</button></a>
+            <a href="countdown.html"><button class="btnNav">Countdown</button></a>
+            <a href="settings.html"><button class="btnNav">Settings</button></a>
+        </div>
+    </header> 
+
+    <body>
+        <div class="content">
+            <h3>Changing Square</h3>
+
+            <div id="square"></div>
+            <p id="squareText">^ Dis yellow square</p>
+            
+            <button class="btnNav" id="changeSquare" onclick="btnChange()">Change colour!</button>
+        
+            <br>
+        </div>
+        <div class="content">
+            <br>
+            <h3>Calculator</h3>
+
+            <fieldset class="field">
+                <form>
+                    <div class="inline">
+                        <p>No.1:</p>
+                    </div>
+                    <div class="inline">
+                        <input type="text" id="calcNum1" class="calcInput">
+                    </div>
+                    <br>
+                    <div class="inline">
+                        <p>No.2:</p>
+                    </div>
+                    <div class="inline">
+                        <input type="text" id="calcNum2" class="calcInput">
+                    </div>
+                    
+                    <br><br>
+                    <input type="button" Value="Addition" class="calcBtn" onClick="addBy()">
+                    <input type="button" Value="Subtraction" class="calcBtn" onClick="subtractBy()">
+                    <input type="button" Value="Multiply" class="calcBtn" onClick="multiplyBy()">
+                    <input type="button" Value="Divide" class="calcBtn" onClick="divideBy()">
+                </form>
+                <p id="calcResult">Results:</p>
+            </fieldset>
+        </div>
+    </body>
+</html>
