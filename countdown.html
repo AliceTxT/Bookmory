@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <title>Booketh</title>
+
+    <!--SCRIPTS-->
+    <script src="countdown.js"></script>
+    <script src="todo.js"></script>
+
+    <!--NAVIGATION-->
+    <header class=>
+        <div class="mainHeader">
+            <div id="headerTitle">
+                <h1>BOOKETH</h1>
+            </div>
+        </div>
+        <div class="navigation">
+            <a href="index.html"><button class="btnNav">Home</button></a>
+            <a href="library.html"><button class="btnNav">Library</button></a>
+            <a href="statistics.html"><button class="btnNav">Statistics</button></a>
+            <a href="countdown.html"><button class="btnNavSelected">Countdown</button></a>
+            <a href="settings.html"><button class="btnNav">Settings</button></a>
+        </div>
+    </header> 
+
+
+    <body>
+        <div class="content">
+            <div id="soonBlock">
+                <h1 id="soonTitle"></h1>
+                <p id="soonDate"></p>
+                <hr id="soonDivider">
+                <p id="soonCountdown"></p>
+            </div>
+            <!--INPUT EVENT NAME-->
+            <div id="soonInputBlock">
+                <div class="soonHeader"><p>Event Name:</p></div>
+                <div>
+                    <input type="text" class="soonInput" placeholder="Start typing..." id="soonEventInput">
+                    <button id="soonBtn" onclick = "countdownSetEvent()">Set</button>
+                </div>
+                </div>
+            <script>
+                document.getElementById("soonTitle").innerHTML = localStorage.getItem("event");
+            </script>
+            <!--INPUT DATE-->
+            <div id="soonInputBlock">
+                <div class="soonHeader"><p>Date:</p></div>
+                <div>
+                    <input type="text" class="soonInput" placeholder="YYYY-MM-DD" id="soonDateInput">
+                    <button id="soonBtn" onclick = "checkDateValidity()">Set</button>
+                </div>
+            </div>
+            <script>
+                document.getElementById("soonDate").innerHTML = localStorage.getItem("date");
+            </script>
+
+
+            <div id="todoContainer">
+                <h2>To-Do List</h2>
+
+                <!--TO-DO ENTER-->
+                <div class="todoEnter">
+                    <input type="text" id="todoInput" placeholder="Enter a task"><input type="button" id="todoInputBtn" value="Add" onclick="addtoTaskList()">
+                </div>
+                <div id="todoTest"></div>
+                <div id="addtoTest"></div>
+
+                <!--TASKLIST
+                <div id="todoTasklist"> 
+                    <div class="oneTask">
+                        <div class="todoTaskName"></div><button class="todoTaskBtn">Edit</button><button class="todoTaskBtn">Delete</button>
+                    
+                    </div>
+                </div>-->
+            </div>
+        </div>
+    </body>
+</html>
